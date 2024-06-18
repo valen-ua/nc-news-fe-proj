@@ -1,17 +1,18 @@
 import { useState } from 'react'
 import '../src/App.css'
 import { Header } from './components/header'
-import { Topics } from './components/nav-bar'
+import { Topics } from './components/Nav'
+import { AllArticles } from './components/ArticleList'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
      <Header />
      <Topics />
-        
+     <AllArticles />   
       
     </>
   )

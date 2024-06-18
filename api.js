@@ -5,7 +5,12 @@ const ncNewsApi = axios.create({
 })
 export const fetchTopics = () => {
     return ncNewsApi.get("/topics").then(({data}) => {
-        console.log(data.topics)
         return data.topics
     })    
+}
+
+export const fetchArticles = () => {
+    return ncNewsApi.get("/articles").then(({data}) => {
+        return data.articles
+    })
 }
