@@ -49,8 +49,27 @@ header {
 }
 
 .topnav {
+  margin: 10px;
   text-align: center;
   border-style: double;
   text-transform: uppercase;
-  text-justify: auto;
+  word-spacing: 1cm;
+  letter-spacing: 0.1cm;
+  
+  
 }
+
+.article-card {
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 300px;
+  margin-right: 300px;
+  background-color: rgb(242, 212, 212);
+  
+}
+
+
+
+ 
+
+ 

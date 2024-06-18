@@ -13,7 +13,7 @@ export const Topics = () => {
 <div className="topnav">
   {topics.map((topic, i) => {
     return (
-        <a key={i}>{topic.slug} </a>
+        <a key={i}>{topic.slug}  </a>
     )
   })}
 </div>
