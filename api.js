@@ -14,3 +14,9 @@ export const fetchArticles = () => {
         return data.articles
     })
 }
+
+export const fetchIndividualArticle = (article_id) => {
+    return ncNewsApi.get(`/articles/${article_id}`).then(({data}) => {
+        return data
+    })
+}
