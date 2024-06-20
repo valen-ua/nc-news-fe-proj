@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { fetchTopics } from "../../api"
-
+import { Link } from "react-router-dom"
 export const Topics = () => {
   const [topics, setTopics] = useState([])  
 
@@ -10,13 +10,13 @@ export const Topics = () => {
     })
   }, [])
     return (
-<div className="topnav">
+<section className="topnav">
   {topics.map((topic, i) => {
     return (
-        <a key={i}>{topic.slug}  </a>
+        <Link key={i}>{topic.slug}  </Link>
     )
   })}
-</div>
+</section>
     )
     
     
