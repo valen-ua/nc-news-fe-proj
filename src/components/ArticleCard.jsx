@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 
 export const ArticleCard = ({article}) => {
+    console.log(article)
 
     return (
         <section className="article-card">
