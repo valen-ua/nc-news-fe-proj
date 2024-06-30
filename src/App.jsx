@@ -5,7 +5,7 @@ import { Header } from './components/header'
 import { Topics } from './components/Nav'
 import { AllArticles } from './components/ArticleList'
 import { IndividualArticle } from './components/IndividualArticle'
-import { CommentsForArticle } from './components/CommentsForArticle'
+
 
 function App() {
   

@@ -20,10 +20,13 @@ export const CommentsForArticle = () => {
         <section className="comments-for-article">
             <h3>Have a look what others think about this article</h3>
             <ul>
+               
             {commentsForArticle.map((comment, i) => {
+                 
                 return (
-                
+                    
                 <li key={comment.comment_id}>
+            
                 <CommentCard />
                  <p></p>
                 

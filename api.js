@@ -26,3 +26,11 @@ export const fetchCommentsForArticle = (article_id) => {
         return data.comments
     })
 }
+
+export const voteOnIndividualArticle = (article_id) => {
+    const patchBody = {
+        inc_votes: 1, }
+    return ncNewsApi.patch(`/articles/${article_id}`, patchBody).then(({data}) => {
+        return data.votes
+    })
+} 
