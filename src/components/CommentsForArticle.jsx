@@ -18,7 +18,8 @@ export const CommentsForArticle = () => {
 
     return (
         <section className="comments-for-article">
-            <h3>Have a look what others think about this article</h3>
+           <h2>COMMENTS</h2>
+            <h4>Have a look what others think about this article</h4>
             <ul>
                
             {commentsForArticle.map((comment, i) => {

@@ -11,7 +11,7 @@ function App() {
   
 
   return (
-    <>
+    <body>
      <Header />
      <Topics />
      <Routes>
@@ -20,7 +20,7 @@ function App() {
      </Routes>
        
       
-    </>
+    </body>
   )
 }
 

@@ -11,11 +11,14 @@ export const Topics = () => {
   }, [])
     return (
 <section className="topnav">
-  {topics.map((topic, i) => {
-    return (
-        <Link key={i}>{topic.slug}  </Link>
-    )
-  })}
+<ul>
+       
+{topics.map((topic, i) => (
+      <li key={i}>
+        <Link to={`/${topic.slug}`}>{topic.slug}</Link>
+      </li>
+    ))}
+   </ul>
 </section>
     )
     
